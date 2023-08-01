@@ -1,0 +1,153 @@
+body {
+  background-color: black;
+  color: aliceblue;
+}
+.top50 {
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  .main-header {
+    background-color: rgb(0, 17, 52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-size: 6rem;
+    }
+  }
+
+  .main {
+    padding-left: 2px;
+    .title-row {
+      background-color: rgb(8, 8, 8);
+      border-radius: 10px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 2% 48% 19% 19% 7%;
+      grid-gap: 20px;
+      padding: 10px 0;
+      height: 50px;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .row {
+      border-radius: 8px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 2% 48% 19% 19% 7%;
+      grid-gap: 20px;
+      padding: 10px 0;
+      height: 50px;
+      &:hover {
+        background-color: rgb(33, 33, 33);
+      }
+      .sr-no {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .a-item {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        .song-image {
+          width: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          height: 90%;
+          .song-name {
+            color: aliceblue;
+            font-size: 1rem;
+            text-decoration: dashed;
+          }
+          .artist-name {
+            color: rgb(150, 150, 150);
+            font-size: 1rem;
+          }
+        }
+      }
+      b-item {
+        display: flex;
+      }
+      c-item {
+        display: flex;
+      }
+      d-item {
+        display: flex;
+      }
+    }
+  }
+}
+
+.single {
+  width: 99%;
+
+  .flex-row {
+    background-color: rgb(18, 18, 18);
+    padding: 10px 10px;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    height: auto;
+    .image {
+      img {
+      }
+    }
+    .details {
+      padding: 0px 0px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-around;
+      .song-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        justify-content: space-between;
+        .song-title {
+          font-size: 4em;
+        }
+
+        .artist-name {
+          font-size: 1.6rem;
+        }
+      }
+
+      .play-time {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .ms-player {
+    margin: 10px;
+    position: sticky;
+    width: 99%;
+    bottom: 0;
+
+    iframe {
+      width: 100%;
+      height: 80px;
+      border: none;
+    }
+  }
+}
