@@ -9,9 +9,9 @@ async function connectToDatabase() {
     const db = client.db(mydbname);
     return db;
   } catch (err) {
-    console.error('Error connecting to MongoDB:', err);
+    console.error("Error connecting to MongoDB:", err);
     throw err;
   }
 }
 
-module.exports = {connectToDatabase}
+module.exports = { connectToDatabase };
